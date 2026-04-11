@@ -189,6 +189,9 @@ void main() {
 
 		vec4 specTex = vec4(UnpackUnorm2x8(gbuffer3.z), UnpackUnorm2x8(gbuffer3.w));
 		Material material = GetMaterialData(specTex);
+		#if defined DISTANT_HORIZONS
+			if (dhRange && materialID == 17) material.emissiveness = 0.0;
+		#endif
 		specTex.x = sqr(oneMinus(specTex.x) * oneMinus(wetnessCustom * 0.3));
 		specularData = specTex.xy;
 

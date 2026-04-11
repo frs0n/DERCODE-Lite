@@ -1,0 +1,29 @@
+{
+	"unusedString":
+		"
+			#include "/Settings.glsl"
+		",
+	"version": 1,
+	"excludeLodsFromVanillaDepth": true,
+	"opaqueDrawBuffers": [
+		6,
+		7,
+		3
+	],
+	"translucentDrawBuffers": [
+		7,
+		2,
+		3
+	],
+	"blending": {
+		"-1": "off"
+	},
+	"useViewportDims": true,
+	"taaOffset": "{ return taaOffset_; }",
+	"uniforms": [
+		"frameCounter",
+		"gbufferModelView",
+		"taaOffset_"
+	],
+	"samplers": []
+}

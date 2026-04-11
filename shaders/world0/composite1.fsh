@@ -34,6 +34,11 @@ flat in vec3 skyIlluminance;
 
 #include "/lib/Surface/Refraction.glsl"
 
+#ifndef RAYTRACED_REFRACTION
+	#include "/lib/Surface/ScreenSpaceReflections.glsl"
+	#include "/lib/Water/DHWaterReflections.inc"
+#endif
+
 #include "/lib/Surface/ReflectionFilter.glsl"
 
 #include "/lib/Atmosphere/Fogs.glsl"
@@ -62,6 +67,7 @@ void main() {
 		bool dhRange = depth >= 1.0;
 		if (dhRange) {
 			depth = GetDepthDH(texel);
+			depthSoild = GetDepthSoildDH(texel);
 			viewPos = ScreenToViewSpaceDH(vec3(screenCoord, depth));
 		}
 	#endif
@@ -70,6 +76,14 @@ void main() {
 	vec3 worldPos 		= mat3(gbufferModelViewInverse) * viewPos;
 	vec3 worldDir 		= normalize(worldPos);
 	worldPos 			+= gbufferModelViewInverse[3].xyz;
+
+	#if defined VOXY && defined DISTANT_HORIZONS
+		if (dhRange && materialMaskT.water) {
+			vec3 minecraftPos = worldPos + cameraPosition;
+			vec3 waveNormal = GetWavesNormal(minecraftPos.xz - minecraftPos.y).xzy;
+			normal = normalize(mat3(gbufferModelView) * waveNormal);
+		}
+	#endif
 
 	if (depth < 1.0) {
 		#ifdef RAYTRACED_REFRACTION
@@ -114,6 +128,17 @@ void main() {
 
 		if (materialMaskT.translucent) {
 			vec4 reflectionData = texelFetch(colortex2, texel, 0);
+			#if defined VOXY && defined DISTANT_HORIZONS && !defined RAYTRACED_REFRACTION
+				if (dhRange && materialMaskT.water) {
+					reflectionData = CalculateDHSpecularReflections(
+						normal,
+						cube(texelFetch(colortex7, texel, 0).y),
+						viewPos,
+						depth,
+						17u
+					);
+				}
+			#endif
 			sceneData = sceneData * reflectionData.a + reflectionData.rgb;
 		} else if (material.hasReflections) {
 			vec4 reflectionData = texelFetch(colortex2, texel, 0);

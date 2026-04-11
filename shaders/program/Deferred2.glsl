@@ -148,7 +148,11 @@ vec4 TemporalLightAccumulation() {
 
 		vec4 prevData = texture(colortex0, prevCoord + vec2(0.5, 0.0));
 
-		float currDist = GetDepthLinear(depth);
+		#if defined DISTANT_HORIZONS
+			float currDist = depth >= 1.0 ? GetDepthLinearDH(dhDepth) : GetDepthLinear(depth);
+		#else
+			float currDist = GetDepthLinear(depth);
+		#endif
 
 		float cameraMovement = distance(cameraPosition, previousCameraPosition);
 
