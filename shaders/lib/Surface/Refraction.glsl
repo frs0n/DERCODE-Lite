@@ -155,10 +155,7 @@ vec2 CalculateRefractCoord(in TranslucentMask mask, in vec3 normal, in vec3 worl
 		float refractionDepth = GetDepthLinearDH(depth) - waterDepth;
 
 		if (mask.water) {
-			worldPos += cameraPosition;
-			vec3 wavesNormal = GetWavesNormal(worldPos.xz - worldPos.y).xzy;
-			vec3 waterNormal = mat3(gbufferModelView) * wavesNormal;
-			vec3 wavesNormalView = normalize(waterNormal);
+			vec3 wavesNormalView = normalize(normal);
 
 			vec3 nv = normalize(gbufferModelView[1].xyz);
 

@@ -81,7 +81,10 @@ void main() {
 		if (dhRange && materialMaskT.water) {
 			vec3 minecraftPos = worldPos + cameraPosition;
 			vec3 waveNormal = GetWavesNormal(minecraftPos.xz - minecraftPos.y).xzy;
-			normal = normalize(mat3(gbufferModelView) * waveNormal);
+			vec3 waveNormalView = normalize(mat3(gbufferModelView) * waveNormal);
+			float grazingFade = smoothstep(0.0, 0.15, abs(dot(normal, viewDir)));
+			float distanceFade = 1.0 - smoothstep(384.0, max(512.0, float(dhRenderDistance) * 0.5), length(viewPos));
+			normal = normalize(mix(normal, waveNormalView, grazingFade * distanceFade));
 		}
 	#endif
 
