@@ -1,0 +1,552 @@
+﻿#完全汉化版本 
+# 作者和主要贡献者
+# _DureXXX_ M1zora Sone4ka
+# 主要修复者
+# _DureXXX_
+# m0nek
+
+#--# 信息 #--------------------------------------------------------------------#
+
+option.INFO=DERCODE LITE
+option.INFO.comment=作者: _DureXXX_ & M1zora 版权 (C) 2024 HaringPro. 保留所有权利 
+
+screen.ABOUT=§r§l版本: 1.1
+screen.ABOUT.comment=§4重制 §4团队 §r/ §6§l_DureXXX_ & M1zore
+screen.FAQ=§4§lDER§r§lCODE 精简版
+screen.FAQ.comment=用于更多效果优化的衍生重制版本 等 | 主 | HaringPro | Recode 团队 | _DureXXX_ & Mizore |
+
+#--# 预设 #----------------------------------------------------------------#
+
+#profile.Low=低
+#profile.Medium=§b中<默认>
+#profile.High=§6高
+#profile.Ultra=§c超高
+#profile.EXTREME=§c极端
+#profile.Horror=§c恐怖
+
+#autoprofile.High=§6高
+
+autoprofile.HIGH=§4§l高 (默认)
+
+profile.HIGH=§4§lDER§r§lCODE (高)
+profile.MEDIUM=§a§l中
+profile.LOW=§b§l低
+profile.Default=§b§l衍生
+profile.Survival=§b§l生存
+profile.Film=§b§l电§4§l影§a§l风§f§l格
+
+profile.custom=更改预设!!!
+profile.Custom=更改预设!!!
+profile.CUSTOM=更改预设!!!
+value.profile.custom=更改预设
+value.profile.Custom=更改预设
+value.profile.CUSTOM=更改预设
+iris.custom=更改预设
+
+#--# 界面 #-----------------------------------------------------------------#
+§4§l §f§l
+
+screen.World=§4§l世§f§l界
+screen.Water=§4§l水§f§l域
+screen.Transparent=§4§l透§f§l明
+screen.Plants=§4§l植§f§l物
+screen.Atmospherics=§4§l大§f§l气
+screen.Clouds=§4§l云§f§l朵
+screen.PC=§4§l平§f§l面 §f§l云
+screen.VC=§4§l体§f§l积 §f§l云
+screen.CS=§4§l云§f§l影
+screen.CC=§4§l普§f§l通 §f§l云
+screen.CR=§4§l雨§f§l天 §f§l云
+screen.VRay=§4§l体§f§l积 §6§l光
+screen.Lighting=§4§l照§f§l明
+screen.Directlighting=§4§l直§f§l接 §f§l照明
+screen.Indirectlighting=§4§l间§f§l接 §f§l照明
+screen.Shadows=§4§l阴§f§l影
+screen.Surface=§4§l表§f§l面
+screen.POM=§4§l视§f§l差 §6§l遮§f§l蔽 §f§l映射
+screen.Reflections=§4§l反§f§l射
+screen.Emissive=§4§l自§f§l发§f§l光
+screen.SubsurfaceScattering=§4§l次§f§l表§f§l面
+screen.SurfaceMisc=§4§l杂§f§l项
+screen.PostProcessing=§4§l后§f§l处§f§l理
+screen.Tonemap=§4§l色§f§l调 §f§l映射
+screen.Exposure=§4§l曝§f§l光
+option.DoF=§4§l景§f§l深
+screen.Bloom=§4§l泛§f§l光
+screen.TAA=§4§lT§f§lAA | §4§lC§f§lAS | §4§lD§f§lLSS 
+screen.MotionBlur=§4§l运§f§l动 §f§l模糊
+screen.Vignette=§4§l暗§f§l角
+screen.Color=§4§l颜§f§l色
+
+screen.DoF=§4§l景§f§l深
+screen.Camera=§4§l相§f§l机
+screen.Chromatic_Abberation=§4§l色§f§l差
+screen.DynamicLight=§4§l动§f§l态光
+screen.Other=§4§l其§f§l他
+screen.SkyBox=§4§l天§f§l空§6§l盒
+screen.Planets=§4§l行§f§l星
+screen.FOG=§4§l雾§f§l霭
+screen.RAYS=§4§l光§f§l线
+screen.SSVR=§4§l屏§f§l幕§6§l体§f§l积 §6§l光
+screen.DLSS=§4§lD§f§lLSS
+screen.OT=§4§l云§f§l朵 杂项
+
+#--# 世界 #-------------------------------------------------------------------#
+
+option.BORDER_FOG=§b边界雾
+option.BORDER_FOG_FALLOFF=边界雾衰减
+option.WHITE_WORLD=§7白色世界
+option.WHITE_WORLD.comment=将所有不透明纹理渲染为纯白色。
+option.DARK_END=§8黑暗末地
+option.DARK_END.comment=末影龙战斗时独特的氛围:)
+option.RAYTRACED_REFRACTION=§e光线追踪折射
+option.REFRACTIVE_DISPERSION=§6折射色散
+
+#--# 水 #-------------------------------------------------------------------#
+
+option.WATER_WAVE_HEIGHT=水波高度
+option.WATER_WAVE_SPEED=水波速度
+option.WATER_FOG_DENSITY=水雾密度
+option.WATER_FOG_DENSITY.comment=水雾密度，值越高水越浑浊。
+option.WATER_REFRACT_IOR=水折射率
+option.WATER_CAUSTICS=§b水体焦散
+option.WATER_CAUSTICS.comment=光穿过水并投射到底部时形成的光斑散射。
+option.WATER_PARALLAX=§e水面视差
+option.WATER_PARALLAX.comment=由水波引起的视差效果。
+option.WATER_STYLE=水波样式
+option.WATER_STYLE.comment=0-默认 1-BSL 2-平面 3-经典 4-Bliss
+option.WATER_STYLE.0=默认
+option.WATER_STYLE.1=BSL
+option.WATER_STYLE.2=平面
+option.WATER_STYLE.3=经典
+option.WATER_STYLE.4=Bliss
+
+#--# 透明 #-------------------------------------------------------------#
+
+option.GLASS_TEXTURE_ALPHA=彩色玻璃纹理透明度
+option.GLASS_TEXTURE_ALPHA.comment=值越高纹理越清晰。也影响冰、史莱姆块等。
+option.GLASS_REFRACT_IOR=冰折射率
+option.GLASS_REFRACT_IOR.comment=同样影响冰、史莱姆块等。
+
+#--# 植物 #------------------------------------------------------------------#
+
+option.PLANTS_WAVE_EFFECTS=§b植物摆动效果
+option.PLANTS_TOUCH_EFFECTS=§e植物触摸效果
+option.PLANTS_TOUCH_EFFECTS.comment=与植物接触时植物位移。
+option.GENERAL_GRASS_FIX=通用草修复
+option.GENERAL_GRASS_FIX.comment=通过法线检测未知方块是否为植物。
+
+#--# 大气 #------------------------------------------------------------#
+option.PLANET2_ENABLED=§4§l行§f§l星2 §f§l启用
+option.PLANET2_SIZE=§4§l行§f§l星2 §f§l大小
+option.PLANET2_BRIGHTNESS=§4§l行§f§l星2 §f§l亮度
+option.PLANET2_ROTX=§4§l行§f§l星2 §f§l旋转 X
+option.PLANET2_ROTY=§4§l行§f§l星2 §f§l旋转 Y
+option.PLANET2_ROTZ=§4§l行§f§l星2 §f§l旋转 Z
+
+option.PLANET_ENABLED=§4§l行§f§l星 §f§l启用
+option.PLANET_SIZE=§4§l行§f§l星 §f§l大小
+option.PLANET_BRIGHTNESS=§4§l行§f§l星 §f§l亮度
+option.PLANET_ROTX=§4§l行§f§l星 §f§l旋转 X
+option.PLANET_ROTY=§4§l行§f§l星 §f§l旋转 Y
+option.PLANET_ROTZ=§4§l行§f§l星 §f§l旋转 Z
+option.MOON_BRIGHTNESS=§4§l月§f§l亮度
+option.MOON_GLOW_STRENGTH=§4§l月§f§l辉 §f§l强度
+
+screen.DynamicCamera=§4§l动§f§l态相机
+
+option.STARS_STYLE=星星样式
+option.STARS_BASE_BRIGHTNESS=星星亮度
+option.STARS_BLOOM_RADIUS=星光泛光视野
+option.STARS_BLOOM_POWER=星星强度
+option.STARS_BLOOM_INTENSITY=星光泛光强度
+option.SKYBOX_STYLE=天空盒样式
+
+option.GODRAYS_ENABLED=§4§l上§f§l帝 §f§l光 §f§l启用
+option.GODRAY_BLUR=§4§l上§f§l帝 §f§l光 §f§l模糊
+option.GODRAY_STRENGTH=§4§l上§f§l帝 §f§l光 §f§l强度
+option.GODRAY_SAMPLES=§4§l上§f§l帝 §f§l光 §f§l采样
+option.GODRAY_DENSITY=§4§l上§f§l帝 §f§l光 §f§l密度
+option.GODRAY_DECAY=§4§l上§f§l帝 §f§l光 §f§l衰减
+option.GODRAY_EXPOSURE=§4§l上§f§l帝 §f§l光 §f§l曝光
+option.GODRAY_DITHER_STRENGTH=§4§l上§f§l帝 §f§l光 §f§l抖动强度
+option.GODRAY_COLOR_BLEEDING=§4§l上§f§l帝 §f§l光 §f§l颜色溢出
+
+option.VOLUMETRIC_CLOUDS=§6体积云
+option.PLANAR_CLOUDS=§6平面云
+option.LAND_ATMOSPHERIC_SCATTERING=§b地面大气散射
+option.SKY_GROUND=§6天空地平线
+option.AURORA=§e极光
+option.AURORA_STRENGTH=极光强度
+option.STARS_INTENSITY=星星强度
+option.STARS_COVERAGE=星星覆盖度
+option.SKY_RENDER_RESOLUTION=天空盒渲染分辨率
+option.ATMOSPHERE_BOTTOM_ALTITUDE=大气底部高度
+option.ATMOSPHERE_TOP_ALTITUDE=大气顶部高度
+prefix.ATMOSPHERE_BOTTOM_ALTITUDE=-
+
+#--# 云 #------------------------------------------------------------------#
+
+option.TEMPORAL_UPSCALING=§4§l时§f§l间 §f§l上采样
+suffix.TEMPORAL_UPSCALING=x
+option.MAX_BLENDED_FRAMES=§4§l最§f§l大混合帧数
+option.FULL_AERIAL_PERSPECTIVE=§4§l全§f§l部空气透视
+option.CLOUDS_SPEED=§4§l云§f§l速
+option.CLOUD_CUMULUS_SUNLIGHT_SAMPLES=§4§l阳§f§l光采样
+option.CLOUD_CUMULUS_SKYLIGHT_SAMPLES=§4§l天§f§l空光采样
+option.CLOUD_CUMULUS_CLEAR_ALTITUDE=§4§l高§f§l度
+option.CLOUD_CUMULUS_CLEAR_ALTITUDE.comment=体积云距海平面的高度。值越高体积云生成在更高的高度。
+suffix.CLOUD_CUMULUS_CLEAR_ALTITUDE=(x3)m
+option.CLOUD_CUMULUS_CLEAR_THICKNESS=§4§l厚§f§l度
+option.CLOUD_CUMULUS_CLEAR_THICKNESS.comment=体积云的垂直覆盖度。值越大体积云越厚。
+suffix.CLOUD_CUMULUS_CLEAR_THICKNESS=m
+option.CLOUD_CUMULUS_CLEAR_COVERY=§4§l覆§f§l盖度
+option.CLOUD_CUMULUS_CLEAR_COVERY.comment=体积云的水平覆盖范围。值越大体积云面积越大。
+option.CLOUD_CUMULUS_CLEAR_DENSITY=§4§l密§f§l度
+option.CLOUD_CUMULUS_CLEAR_DENSITY.comment=体积云表面的密度。值越高体积云边缘更清晰。
+option.CLOUD_CUMULUS_CLEAR_SUNLIGHTING=§4§l阳§f§l光强度
+option.CLOUD_CUMULUS_CLEAR_SKYLIGHTING=§4§l天§f§l空光强度
+option.CLOUD_CUMULUS_CLEAR_HIGHLIGHT_BRIGHTNESS=§4§l漫§f§l反射高光亮度
+option.CLOUD_CUMULUS_RAIN_ALTITUDE=§4§l高§f§l度
+option.CLOUD_CUMULUS_RAIN_ALTITUDE.comment=体积云距海平面的高度。值越高体积云生成在更高的高度。
+suffix.CLOUD_CUMULUS_RAIN_ALTITUDE=(x3)m
+option.CLOUD_CUMULUS_RAIN_THICKNESS=§4§l厚§f§l度
+option.CLOUD_CUMULUS_RAIN_THICKNESS.comment=体积云的垂直覆盖度。值越大体积云越厚。
+suffix.CLOUD_CUMULUS_RAIN_THICKNESS=m
+option.CLOUD_CUMULUS_RAIN_COVERY=§4§l覆§f§l盖度
+option.CLOUD_CUMULUS_RAIN_COVERY.comment=体积云的水平覆盖范围。值越大体积云面积越大。
+option.CLOUD_CUMULUS_RAIN_DENSITY=§4§l密§f§l度
+option.CLOUD_CUMULUS_RAIN_DENSITY.comment=体积云表面的密度。值越高体积云边缘更清晰。
+option.CLOUD_CUMULUS_RAIN_SUNLIGHTING=§4§l阳§f§l光强度
+option.CLOUD_CUMULUS_RAIN_SKYLIGHTING=§4§l天§f§l空光强度
+option.CLOUD_CUMULUS_RAIN_HIGHLIGHT_BRIGHTNESS=§4§l漫§f§l反射高光亮度
+
+option.CLOUD_CUMULUS_SAMPLES=§4§l采§f§l样数
+option.CLOUD_LOCAL_COVERAGE=§4§l局§f§l部覆盖度
+option.CLOUD_LOCAL_COVERAGE.comment=使用噪声调节体积云的覆盖度。大范围随机分布。
+option.CIRRUS_CLOUDS=§4§l卷§f§l云
+value.CIRRUS_CLOUDS.0=关闭
+value.CIRRUS_CLOUDS.1=类型 1
+value.CIRRUS_CLOUDS.2=类型 2
+option.CIRROCUMULUS_CLOUDS=§6§l卷积云
+option.CLOUDS_WEATHER=§a§l云天气
+#option.WEATHER_CLOUDS=§b§l平面云类型
+#value.WEATHER_CLOUDS.0=§e§l仅卷云
+#value.WEATHER_CLOUDS.1=§6§l仅卷积云
+#value.WEATHER_CLOUDS.2=§a§l卷云+卷积云(天气系统开)
+option.CLOUD_PLANE_ALTITUDE=§4§l高§f§l度
+option.CLOUD_PLANE_ALTITUDE.comment=平面云距海平面的高度。值越高平面云生成在更高的高度。
+suffix.CLOUD_PLANE_ALTITUDE=m
+option.CLOUD_PLANE0_DENSITY=§4§l密§f§l度
+option.CLOUD_PLANE0_DENSITY.comment=平面云的聚集程度。值越高平面云聚集越紧。
+option.CLOUD_PLANE0_COVERY=§4§l覆§f§l盖度
+option.CLOUD_PLANE0_COVERY.comment=平面云的水平拉伸。值越高平面云看起来更宽。
+option.CLOUD_PLANE1_DENSITY=§4§l密§f§l度
+option.CLOUD_PLANE1_DENSITY.comment=平面云的聚集程度。值越高平面云聚集越紧。
+option.CLOUD_PLANE1_COVERY=§4§l覆§f§l盖度
+option.CLOUD_PLANE1_COVERY.comment=平面云的水平拉伸。值越高平面云看起来更宽。
+option.CLOUDS_SHADOW=§6§l云阴影
+option.PC_SHADOW=§a§l平面云阴影
+option.VC_SHADOW=§b§l体积云阴影
+
+#--# 体积光线 #----------------------------------------------------------#
+
+option.VOLUMETRIC_FOG=§6体积雾
+option.FOG_TYPE=§b雾类型
+value.FOG_TYPE.0=§b§l无噪声(低)
+value.FOG_TYPE.1=§a§l轻薄云雾(中)
+value.FOG_TYPE.2=§6§l云雾(高)
+value.FOG_TYPE.3=§4§l云海(超)
+option.RAY_STAINED_GLASS_TINT=§a彩玻色调
+option.VOLUMETRIC_FOG_DENSITY=体积雾密度
+option.VOLUMETRIC_FOG_FALLOFF=体积雾衰减
+option.VOLUMETRIC_FOG_SAMPLES=体积雾与体积光采样
+option.SEA_LEVEL=海平面
+option.FALLOFF_START=衰减开始
+option.VOLUMETRIC_LIGHT=§6体积光
+option.VOLUMETRIC_LIGHT_STRENGTH=体积光强度
+option.UW_VOLUMETRIC_LIGHT=§e水下体积光
+option.UW_VOLUMETRIC_LIGHT_STRENGTH=水下体积光强度
+option.UW_VOLUMETRIC_LIGHT_LENGTH=水下体积光采样长度
+
+#--# 阴影 #------------------------------------------------------------------#
+
+option.SHADOW_MAP_BIAS=阴影图偏移
+option.shadowMapResolution=阴影分辨率
+option.shadowMapResolution.comment=阴影的平滑程度。值越高阴影越平滑。
+suffix.shadowMapResolution=
+option.shadowDistance=阴影渲染距离
+value.shadowDistance.64.0=§b§l4 区块
+value.shadowDistance.80.0=§b§l5 区块
+value.shadowDistance.96.0=§b§l6 区块
+value.shadowDistance.112.0=§b§l7 区块
+value.shadowDistance.128.0=§a§l8 区块
+value.shadowDistance.160.0=§a§l10 区块
+value.shadowDistance.192.0=§a§l12 区块
+value.shadowDistance.224.0=§6§l14 区块
+value.shadowDistance.256.0=§6§l16 区块
+value.shadowDistance.320.0=§6§l20 区块
+value.shadowDistance.384.0=§6§l24 区块
+value.shadowDistance.512.0=§6§l32 区块
+value.shadowDistance.768.0=§6§l48 区块
+value.shadowDistance.1024.0=§6§l64 区块
+value.shadowDistance.2048.0=§4§l128 区块
+value.shadowDistance.4096.0=§4§l256 区块
+value.shadowDistance.8192.0=§o§4§l§k1§4§l§o512 区块 §o§4§l[不建议]§o§4§l§k1
+value.shadowDistance.16384.0=§o§4§l§k1§4§l§o1024 区块 §o§4§l[不建议]§o§4§l§k1
+value.shadowDistance.32768.0=§o§4§l§k1§4§l§o2048 区块 §o§4§l[不建议]§o§4§l§k1
+value.shadowDistance.65536.0=§o§4§l§k1§4§l§o4096 区块 §o§4§l[不建议]§o§4§l§k1
+suffix.shadowDistance=§a§l方块
+option.PCF_SAMPLES=过滤采样
+option.COLORED_SHADOWS=§b彩色玻璃阴影
+option.SCREEN_SPACE_SHADOWS=§d屏幕空间阴影
+option.SHADOW_BACKFACE_CULLING=§c阴影背面裁剪
+option.DH_SHADOW=§e远处地平线阴影
+
+#--# 照明 #----------------------------------------------------------------#
+
+option.DYNAMIC_LIGHT_INTENSITY=§6手持光强度
+option.HELD_LIGHT_COLOR_ENABLED=§6动态光颜色 [无体素]
+value.HELD_LIGHT_COLOR_ENABLED.0=关闭
+value.HELD_LIGHT_COLOR_ENABLED.1=开启
+option.DYNAMIC_LIGHT_COLOR_INTENSITY=§6颜色光强度
+option.BASIC_BRIGHTNESS=§b基础亮度
+option.BASIC_BRIGHTNESS_NETHER=§b下界基础亮度
+option.BASIC_BRIGHTNESS_END=§b末地基础亮度
+option.sunPathRotation=太阳路径旋转角
+suffix.sunPathRotation=°
+option.SUNLIGHT_INTENSITY=阳光强度
+option.SUNLIGHT_INTENSITY.comment=阳光强度。值越高阳光越亮
+option.SKYLIGHT_INTENSITY=天空光强度
+option.SKYLIGHT_INTENSITY.comment=天空光强度。值越高天空光越亮
+option.NIGHT_BRIGHTNESS=夜间亮度
+option.NIGHT_BRIGHTNESS.comment=夜间大气和照明亮度。值越高夜晚越亮
+option.TORCHLIGHT_BRIGHTNESS=光源亮度
+option.TORCHLIGHT_BRIGHTNESS.comment=光源的亮度。值越高光源越亮
+option.TORCHLIGHT_COLOR_TEMPERATURE=光源色温
+option.TORCHLIGHT_COLOR_TEMPERATURE.comment=光源的色温。
+suffix.TORCHLIGHT_COLOR_TEMPERATURE=K
+option.HELD_TORCHLIGHT=§e[旧] 手持照明 
+option.HELD_TORCHLIGHT.comment=手持光源可以照亮周围
+option.HELDLIGHT_BRIGHTNESS=手持照明亮度
+option.SSAO_ENABLED=§b屏幕空间环境光遮蔽
+option.SSAO_ENABLED.comment=在物体接触或交汇处增加柔和暗影。
+option.SSAO_SAMPLES=环境光遮蔽采样
+option.SSAO_STRENGTH=环境光遮蔽强度
+option.GI_ENABLED=§6全局光照
+option.GI_ENABLED.comment=启用 RSM(反射阴影图) 全局光照。模拟阳光漫反射。
+option.GI_SAMPLES=全局光照采样
+option.GI_SAMPLES.comment=全局光照质量。值越高伪影越少。
+option.GI_RENDER_RESOLUTION=全局光照渲染分辨率
+option.GI_RENDER_RESOLUTION.comment=全局光照渲染分辨率。分辨率越低锯齿越明显。
+option.GI_RADIUS=全局光照半径
+option.GI_RADIUS.comment=全局光照范围。值越高扩散越远
+option.GI_BRIGHTNESS=全局光照亮度
+option.VOXEL_SS=§6不体素化 [启用普通/默认照明]
+option.VOXEL_SS.comment=关闭=体素光照工作一半; 此测试版可能更多系统不工作! 包含更多视觉效果! 测试版!
+
+#--# 表面 #-----------------------------------------------------------------
+
+option.ANISOTROPIC_FILTER=各向异性过滤
+value.ANISOTROPIC_FILTER.0=关闭
+value.ANISOTROPIC_FILTER.2=2x
+value.ANISOTROPIC_FILTER.4=4x
+value.ANISOTROPIC_FILTER.8=8x
+value.ANISOTROPIC_FILTER.16=16x
+value.ANISOTROPIC_FILTER.32=32x
+value.ANISOTROPIC_FILTER.64=64x
+option.TEXTURE_FORMAT=§bPBR 格式
+value.TEXTURE_FORMAT.0=§eLab PBR [1.3]
+value.TEXTURE_FORMAT.1=§6SEUS PBR [自定义]
+option.NORMAL_MAP=法线贴图
+option.NORMAL_MAP.comment=视差等效果的前置选项。使用带法线贴图的资源包时请启用。
+option.SPECULAR_MAP=高光贴图
+option.SPECULAR_MAP.comment=反射等效果的前置选项。使用带高光贴图的资源包时请启用。
+option.POROSITY=labPBR 孔隙度
+option.TEXTURE_RESOLUTION=纹理分辨率
+option.PARALLAX=§6视差
+option.PARALLAX.comment=当资源包支持时，为表面增加凸凹细节。在不同角度呈现不同细节。
+option.SMOOTH_PARALLAX=§b平滑视差
+option.PARALLAX_SHADOW=视差阴影
+option.PARALLAX_SAMPLES=视差采样
+option.PARALLAX_SAMPLES.comment=调整此项可显著提高视差质量，但也会显著影响性能。
+option.PARALLAX_REFINEMENT=§a视差优化
+option.PARALLAX_REFINEMENT_STEPS.comment=启用可改善视差采样，对性能影响较小。
+option.PARALLAX_REFINEMENT_STEPS=视差优化步骤
+option.PARALLAX_DEPTH=视差深度
+option.PARALLAX_DEPTH.comment=视差深度。值越高高度差越大。
+option.PARALLAX_BASED_NORMAL=基于视差的法线
+option.PARALLAX_BASED_NORMAL.comment=存在视差深度时使用由视差数据生成的法线而不是法线贴图采样。
+option.SPECULAR_HIGHLIGHT_BRIGHTNESS=高光亮度
+option.ROUGH_REFLECTIONS=§e粗糙反射
+option.ROUGH_REFLECTIONS.comment=启用粗糙度 GGX VNDF。严重影响性能并产生大量噪点。
+option.ROUGH_REFLECTIONS_THRESHOLD=§e粗糙反射阈值
+option.REFLECTION_FILTER=§6反射过滤
+option.REFLECTION_FILTER.comment=减少粗糙反射产生的噪点。
+option.HQ_TRACING=§d高质量追踪
+option.RAYTRACE_REFINEMENT=§a光线追踪优化
+option.RAYTRACE_REFINEMENT_STEPS=光线追踪优化步骤
+option.RAIN_SPLASH_EFFECT=§a雨滴溅起效果
+option.RAIN_SPLASH_EFFECT.comment=雨天雨滴形成的圆形波纹。
+option.FORCE_WET_EFFECT=§b雨天潮湿效果
+option.FORCE_WET_EFFECT.comment=模拟雨天表面的积水。
+option.RAIN_SPLASH_BILATERAL=雨滴溅起双边滤波
+option.RAIN_SPLASH_BILATERAL.comment=使用平滑的雨滴代替精确的像素雨滴。
+option.RAYTRACE_SAMPLES=光线追踪采样
+option.RAYTRACE_SAMPLES.comment=屏幕空间反射的追踪采样数。
+option.SPECULAR_TAIL_CLAMP=尾部夹紧
+option.SPECULAR_TAIL_CLAMP.comment=抑制粗糙反射中的抖动。
+option.EMISSION_MODE=§6自发光模式
+value.EMISSION_MODE.0=硬编码
+value.EMISSION_MODE.1=硬编码+PBR
+value.EMISSION_MODE.2=仅PBR
+option.EMISSION_BRIGHTNESS=自发光亮度
+option.EMISSIVE_CURVE=自发光曲线
+option.EMISSIVE_ORES=§e发光矿石
+option.EMISSIVE_SELECT_OUTLINE=§b发光选择轮廓
+option.SUBSERFACE_SCATTERING_MODE=§b次表面散射模式
+value.SUBSERFACE_SCATTERING_MODE.0=硬编码
+value.SUBSERFACE_SCATTERING_MODE.1=硬编码+labPBR
+value.SUBSERFACE_SCATTERING_MODE.2=仅labPBR
+option.SUBSERFACE_SCATTERING_STRENTGH=次表面散射强度
+option.BOAT_LEAK_FIX=船漏水修复
+option.BOAT_LEAK_FIX.comment=适用于修改了船模型的资源包可能出现的问题。
+option.ENTITY_STATUS_COLOR=§c实体状态颜色
+option.ENTITY_STATUS_COLOR.comment=实体受伤或其他时颜色变化。
+option.ENTITY_EYES_LIGHTING=§6发光实体眼睛
+option.ENTITY_EYES_LIGHTING.comment=某些实体及其眼睛的发光效果。
+option.RAIN_SPARKLE=§b雨滴闪光
+option.RAIN_SPARKLE.comment=模拟雨滴闪光效果。
+option.MOD_BLOCK_SUPPORT=§c模组方块支持
+
+#--# 后处理 #---------------------------------------------------------#
+
+option.CHROMATIC_ABERRATION_ENABLED=§a§l色§f§l差 §f§l启用
+value.CHROMATIC_ABERRATION_ENABLED.1=开启
+value.CHROMATIC_ABERRATION_ENABLED.0=关闭
+
+option.CHROMATIC_ABERRATION_STRENGTH=§a§l色§f§l差 §f§l强度
+
+option.CHROMATIC_ABERRATION_CENTER=§a§l色§f§l差视野 [色差到准星距离]
+
+option.CHROMATIC_ABERRATION_STYLE=§a§l色§f§l差风格
+value.CHROMATIC_ABERRATION_STYLE.1=经典
+value.CHROMATIC_ABERRATION_STYLE.2=老式3D
+value.CHROMATIC_ABERRATION_STYLE.3=动态RGB
+value.CHROMATIC_ABERRATION_STYLE.4=蓝+绿
+
+screen.DynamicCamera=§4§l眼§f§l睛偏移
+option.EYE_SQUINT_ENABLED=§a§l眼§f§l睛偏移
+value.EYE_SQUINT_ENABLED.0-关=关闭
+value.EYE_SQUINT_ENABLED.1=开启
+option.EYE_SQUINT_SPEED=§a§l动§f§l画速度 [无效果]
+option.EYE_SQUINT_MAX=§a§l不§f§l知道这个选项 XD
+option.EYE_SQUINT_SOFTNESS=§a§l柔§f§l和度
+option.EYE_SQUINT_HEIGHT_PIXELS=§a§l像§f§l素闭合大小
+option.EYE_SQUINT_OFFSET=§a§l偏§f§l移
+
+option.SOFT_BLOOM_ENABLED=§a§l柔§f§l和泛光
+option.SOFT_BLOOM_AMOUNT=§a§l强§f§l度
+option.SOFT_BLOOM_RADIUS=§a§l半§f§l径
+option.SOFT_BLOOM_QUALITY=§a§l质§f§l量 [LOD]
+option.FOG_BLOOM_INTENSITY=§a§l雾§f§l泛光强度
+option.FOG_BLOOM_RAIN_INTENSITY=§a§l雨§f§l泛光强度
+option.FOG_BLOOM_MULTIPLIER=§a§l泛§f§l光倍增
+
+option.PURKINJE_SHIFT=真实夜光 §a§l[推荐使用]
+option.CINEMATIC_EFFECT=§a§l电§f§l影效§f§l果
+option.DOF_ENABLED=§a§l景§f§l深
+option.DOF_CHROMA_DISPERSION=§a§l景§f§l深 §f§l色差散射
+option.FOCUS_MODE=§a§l对§f§l焦模式
+value.FOCUS_MODE.0=自动
+value.FOCUS_MODE.1=手动
+option.MANUAL_FOCUS=§a§l手§f§l动 §f§l对焦
+suffix.MANUAL_FOCUS=米
+option.DOF_SAMPLES=§a§l景§f§l深 §f§l采样
+option.DOF_INTENSITY=§a§l景§f§l深 §f§l强度
+option.DOF_ANAMORPHIC_RATIO=§a§l景§f§l深 §f§l变形比
+option.CAMERA_APERTURE=§a§l相§f§l机 §f§l光圈
+option.FOCUSING_SPEED=§a§l对§f§l焦速度
+option.AUTO_EXPOSURE=§a§l自§f§l动 §f§l曝光
+option.EXPOSURE_SPEED=§a§l曝§f§l光 §f§l速度
+option.AUTO_EXPOSURE_LOD=§a§l自§f§l动 §f§l曝光 §f§l级别
+option.AUTO_EXPOSURE_BIAS=§a§l自§f§l动 §f§l曝光 §f§l偏置
+option.MANUAL_EXPOSURE_VALUE=§a§l手§f§l动 §f§l曝光 §f§l值
+option.TAA_ENABLED=§a§l时§f§l间 §f§l抗锯齿
+option.TAA_ENABLED.comment=使用前一帧及抖动对下一帧进行滤波以平滑图像并尝试消除锯齿。移动过快可能导致模糊。当渲染分辨率过低时会出现明显抖动。FPS过低时获得平滑图像需要更长时间。
+option.TAA_SHARPEN=§a§lT§f§lAA 锐化
+option.TAA_SHARPNESS=§a§lT§f§lAA 锐度
+option.MOTION_BLUR=§a§l运§f§l动模糊
+option.MOTION_BLUR.comment=移动相机时对图像应用模糊。
+option.MOTION_BLUR_SAMPLES=§a§l运§f§l动模糊采样
+option.MOTION_BLUR_STRENGTH=§a§l运§f§l动模糊强度
+option.BLOOM_ENABLED=§a§l泛§f§l光
+option.BLUR_SAMPLES=§a§l模§f§l糊采样
+value.BLUR_SAMPLES.1=3x3
+value.BLUR_SAMPLES.2=5x5
+value.BLUR_SAMPLES.3=7x7
+value.BLUR_SAMPLES.4=9x9
+value.BLUR_SAMPLES.5=11x11
+value.BLUR_SAMPLES.6=13x13
+option.BLOOM_AMOUNT=§a§l泛§f§l光强度
+option.BLOOM_AMOUNT.comment=明亮物体的光晕。值越高影响区域越大且图像更模糊。
+option.BLOOMY_FOG=§a§l雾 §f§l光传播
+option.BLOOMY_FOG.comment=使用泛光模拟雾散射。
+option.VIGNETTE_ENABLED=§a§l暗§f§l角
+option.VIGNETTE_STRENGTH=§a§l暗§f§l角强度
+
+#--# 色彩与色调映射 #---------------------------------------------------#
+
+option.CAS_ENABLED=§bFidelityFX CAS
+option.CAS_ENABLED.comment=AMD FidelityFX 对比度自适应锐化。锐化最终图像。
+option.CAS_STRENGTH=CAS 强度
+option.TONEMAP=§a§l色§f§l调映射
+value.TONEMAP.AgX_Minimal=AgX 精简
+value.TONEMAP.AgX_Full=AgX 完整
+
+option.COLOR_GRADING=§a§l颜§f§l色分级
+option.COLOR_GRADING.comment=§b以下可调选项的前缀。调整最终图像的色调。
+option.BRIGHTNESS=§a§l亮§f§l度
+option.CONTRAST=§a§l对§f§l比度
+option.GAMMA=§a§l伽§f§l马
+option.SATURATION=§a§l饱§f§l和度
+option.WHITE_BALANCE=§a§l白§f§l平衡
+suffix.WHITE_BALANCE=K
+
+#--# 调试 #-------------------------------------------------------------------
+
+value.DEBUG_NORMAL.0=关闭
+value.DEBUG_NORMAL.1=查看法线
+value.DEBUG_NORMAL.2=世界法线
+option.LIGHT_OVERLAY=显示光照等级覆盖
+option.LIGHT_OVERLAY.0=关闭
+option.LIGHT_OVERLAY.1=开启
+option.CHUNK_OVERLAY=显示区块网格
+option.CHUNK_OVERLAY.0=关闭
+option.CHUNK_OVERLAY.1=开启
+
+option.DLSS_LIKE_ENABLED= §4§lD§f§lLSS
+value.DLSS_LIKE_ENABLED.0=关闭
+value.DLSS_LIKE_ENABLED.1=开启
+option.DLSS_QUALITY=§4§lD§f§lLSS 质量
+value.DLSS_QUALITY.0=性能
+value.DLSS_QUALITY.1=平衡
+value.DLSS_QUALITY.2=质量
+value.DLSS_QUALITY.3=极致
+option.DLSS_SHARPNESS=§4§lD§f§lLSS §f§l锐度
+value.DLSS_SHARPNESS.0=关闭
+value.DLSS_SHARPNESS.1=开启
+option.DLSS_TEMPORAL_STRENGTH=DLSS 分辨率缩放
+option.DLSS_DISTANCE_START=DLSS 起始 [ 方块 ]
+option.DLSS_DISTANCE_END=DLSS 结束 [ 方块 ]
+
+#--# 随机 #--------------------------------------------------------------------------#
+option.EXPOSURE_STYLE= §a§l曝§f§l光 §f§l风格
+value.EXPOSURE_STYLE.0=衍生 [推荐]
+value.EXPOSURE_STYLE.1=UE5  
+value.EXPOSURE_STYLE.2=COD HDR
+value.EXPOSURE_STYLE.3=UE4
+value.EXPOSURE_STYLE.4=COMPL
+value.EXPOSURE_STYLE.5=平滑
+value.EXPOSURE_STYLE.6=Bliss
+value.EXPOSURE_STYLE.7=真实
