@@ -230,7 +230,13 @@ void main() {
 			skyboxData = texelFetch(colortex2, currentTexel, 0);
 			if (offset == texel % TEMPORAL_UPSCALING) {
 				skyboxData = mix(skyboxData, prevData, blendWeight);
-			} else skyboxData = prevData;
+			} else {
+			#if defined VOXY
+				skyboxData = textureBicubic(colortex2, min(screenCoord * rcp(float(TEMPORAL_UPSCALING)), rcp(TEMPORAL_UPSCALING) - screenPixelSize));
+			#else
+				skyboxData = prevData;
+			#endif
+			}
 		}
 	#endif
 }
