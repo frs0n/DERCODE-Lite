@@ -23,7 +23,7 @@ void voxy_emitFragment(VoxyFragmentParameters parameters) {
 
 	#if TEXTURE_FORMAT == 0
 		if (materialID == 6u) specularData.b = 0.45;
-		if (materialID == 7u || materialID == 10u) specularData.b = 0.35;
+		if (materialID == 7u || materialID == 10u) specularData.b = 0.25;
 	#elif SUBSERFACE_SCATTERING_MODE < 2
 		if (materialID == 6u) specularData.a = 0.45;
 		if (materialID == 7u || materialID == 10u) specularData.a = 0.7;
