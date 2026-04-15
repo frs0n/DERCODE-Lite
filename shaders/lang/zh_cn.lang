@@ -1,19 +1,19 @@
 ﻿#完全汉化版本 
 # 作者和主要贡献者
-# _DureXXX_ M1zora Sone4ka
+# _DureXXX_ frs0n M1zora Sone4ka
 # 主要修复者
-# _DureXXX_
+# _DureXXX_ & frs0n
 # m0nek
 
 #--# 信息 #--------------------------------------------------------------------#
 
 option.INFO=DERCODE LITE
-option.INFO.comment=作者: _DureXXX_ & M1zora 版权 (C) 2024 HaringPro. 保留所有权利 
+option.INFO.comment=作者: _DureXXX_ & frs0n & M1zora 版权 (C) 2024 HaringPro. 保留所有权利 
 
 screen.ABOUT=§r§l版本: 1.1
-screen.ABOUT.comment=§4重制 §4团队 §r/ §6§l_DureXXX_ & M1zore
+screen.ABOUT.comment=§4重制 §4团队 §r/ §6§l_DureXXX_ & frs0n & M1zore
 screen.FAQ=§4§lDER§r§lCODE 精简版
-screen.FAQ.comment=用于更多效果优化的衍生重制版本 等 | 主 | HaringPro | Recode 团队 | _DureXXX_ & Mizore |
+screen.FAQ.comment=用于更多效果优化的衍生重制版本 等 | 主 | HaringPro | Recode 团队 | _DureXXX_ & frs0n & Mizore |
 
 #--# 预设 #----------------------------------------------------------------#
 
